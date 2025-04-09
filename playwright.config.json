@@ -1,35 +1,44 @@
 {
-    "testDir": "./tests",
-    "timeout": 30000,
-    "retries": 2,
-    "reporter": [["list"], ["html"]],
-    "use": {
-      "headless": false,
-      "screenshot": "only-on-failure",
-      "video": "retain-on-failure",
-      "trace": "retain-on-failure",
-      "baseURL": "https://www.amazon.com/",
-      "viewport": { "width": 1280, "height": 720 }
-    },
-    "projects": [
-      {
-        "name": "Chromium",
-        "use": {
-          "browserName": "chromium"
-        }
-      },
-      {
-        "name": "Firefox",
-        "use": {
-          "browserName": "firefox"
-        }
-      },
-      {
-        "name": "WebKit",
-        "use": {
-          "browserName": "webkit"
-        }
-      }
+  "testDir": "./tests",
+  "timeout": 30000,
+  "retries": 2,
+  "reporter": [
+    [
+      "list"
+    ],
+    [
+      "html"
     ]
-  }
-  
+  ],
+  "use": {
+    "headless": false,
+    "screenshot": "only-on-failure",
+    "video": "retain-on-failure",
+    "trace": "retain-on-failure",
+    "baseURL": "https://www.trendyol.com/",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "projects": [
+    {
+      "name": "Chromium",
+      "use": {
+        "browserName": "chromium"
+      }
+    },
+    {
+      "name": "Firefox",
+      "use": {
+        "browserName": "firefox"
+      }
+    },
+    {
+      "name": "WebKit",
+      "use": {
+        "browserName": "webkit"
+      }
+    }
+  ]
+}
